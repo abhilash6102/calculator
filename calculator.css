@@ -144,12 +144,13 @@
 @media only screen and (max-width: 420px) {
   body {
     background-color: rgb(41, 44, 44);
+    overflow: hidden;
   }
   .main {
     align-items: flex-end;
     background-color: rgb(41, 44, 44);
     position: relative;
-    top: -40px;
+    top: -65px;
   }
 
   .btn {
