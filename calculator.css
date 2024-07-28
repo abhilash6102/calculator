@@ -142,9 +142,14 @@
   }
 }
 @media only screen and (max-width: 420px) {
+  body {
+    background-color: rgb(41, 44, 44);
+  }
   .main {
     align-items: flex-end;
     background-color: rgb(41, 44, 44);
+    position: relative;
+    top: -40px;
   }
 
   .btn {
@@ -167,13 +172,11 @@
     height: 650px;
   }
   .value {
-    bottom: 50vmin;
-
+    bottom: 40vmin;
     font-size: 10vmin;
   }
   .sub-value {
-    bottom: 40vmin;
-
+    bottom: 30vmin;
     font-size: 5vmin;
   }
   .blue {
