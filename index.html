@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="result">
+          <div class="sub-value"></div>
+          <div class="value"></div>
+        </div>
+        <div class="box">
+          <button class="btn blue size" onclick="remove()">AC</button>
+          <button class="btn blue size" onclick="del()">DEL</button>
+          <button class="btn blue" onclick="appendcharacter('.')">.</button>
+          <button
+            class="btn blue"
+            style="font-size: 3.5vmin"
+            onclick="appendcharacter('/')"
+          >
+            /
+          </button>
+          <button class="btn" onclick="appendcharacter('7')">7</button>
+          <button class="btn" onclick="appendcharacter('8')">8</button>
+          <button class="btn" onclick="appendcharacter('9')">9</button>
+          <button
+            class="btn blue"
+            style="padding-top: 10px"
+            onclick="appendcharacter('*')"
+          >
+            *
+          </button>
+          <button class="btn" onclick="appendcharacter('4')">4</button>
+          <button class="btn" onclick="appendcharacter('5')">5</button>
+          <button class="btn" onclick="appendcharacter('6')">6</button>
+          <button class="btn blue" onclick="appendcharacter('-')">-</button>
+          <button class="btn" onclick="appendcharacter('1')">1</button>
+          <button class="btn" onclick="appendcharacter('2')">2</button>
+          <button class="btn" onclick="appendcharacter('3')">3</button>
+          <button class="btn blue" onclick="appendcharacter('+')">+</button>
+          <button class="btn" onclick="appendcharacter('00')">00</button>
+          <button class="btn" onclick="appendcharacter('0')">0</button>
+          <button class="btn blue large" onclick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>

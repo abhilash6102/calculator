@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9292929d;
+}
+.container {
+  width: 370px;
+  height: 620px;
+  background-color: rgb(41, 44, 44);
+  border-radius: 17px;
+}
+.result {
+  max-width: 350px;
+  height: 180px;
+  color: white;
+  position: relative;
+}
+
+.value {
+  max-width: 85%;
+  font-size: 4.2vmin;
+  position: absolute;
+  bottom: 8vmin;
+  right: 2vmin;
+  text-align: right;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+.value::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+.value {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.sub-value {
+  position: absolute;
+  bottom: 4vmin;
+  right: 2vmin;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btn {
+  width: 65px;
+  height: 65px;
+  margin: 10px;
+  border-radius: 50%;
+  border: none;
+  font-size: 2.8vmin;
+  background-color: rgb(68, 68, 68);
+  color: white;
+}
+.btn:active {
+  background-color: rgb(55, 55, 55);
+  color: rgb(214, 214, 214);
+}
+.blue {
+  color: rgb(21, 78, 223);
+  font-size: 4vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.size {
+  font-size: 2.8vmin;
+}
+.blue:active {
+  background-color: rgb(50, 50, 50);
+  color: rgb(21, 78, 223);
+}
+.large {
+  width: 140px;
+  border-radius: 50px;
+  background-color: rgb(21, 78, 223);
+  color: white;
+}
+.large:active {
+  background-color: rgb(25, 71, 185);
+  color: rgb(214, 214, 214);
+}
+@media only screen and (max-width: 700px) {
+  .value {
+    bottom: 9vmin;
+  }
+  .sub-value {
+    bottom: 4vmin;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .value {
+    bottom: 10vmin;
+  }
+  .sub-value {
+    bottom: 5vmin;
+  }
+  .btn {
+    font-size: 3.8vmin;
+  }
+  .blue {
+    font-size: 5vmin;
+  }
+  .size {
+    font-size: 3.5vmin;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .value {
+    bottom: 13vmin;
+    right: 2vmin;
+    font-size: 6vmin;
+  }
+  .sub-value {
+    bottom: 6vmin;
+    right: 2vmin;
+  }
+  .btn {
+    font-size: 4.5vmin;
+  }
+  .blue {
+    font-size: 5.7vmin;
+  }
+  .size {
+    font-size: 4.5vmin;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .main {
+    min-height: 700px;
+    align-items: flex-end;
+    background-color: rgb(41, 44, 44);
+  }
+
+  .btn {
+    width: 70px;
+    height: 70px;
+    margin: 8px;
+  }
+  .large {
+    width: 160px;
+  }
+  .result {
+    width: 400px;
+    height: 180px;
+    color: rgb(255, 255, 255);
+    position: relative;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .value {
+    bottom: 50vmin;
+    right: 5.5vmin;
+    font-size: 10vmin;
+  }
+  .sub-value {
+    bottom: 40vmin;
+    right: 5.5vmin;
+    font-size: 5vmin;
+  }
+  .btn {
+    font-size: 6.5vmin;
+  }
+  .blue {
+    font-size: 9vmin;
+  }
+  .size {
+    font-size: 6vmin;
+  }
+  .large {
+    width: 150px;
+  }
+}
