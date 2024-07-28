@@ -143,7 +143,6 @@
 }
 @media only screen and (max-width: 420px) {
   .main {
-    min-height: 700px;
     align-items: flex-end;
     background-color: rgb(41, 44, 44);
   }
